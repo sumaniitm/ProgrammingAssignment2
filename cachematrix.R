@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+# The first function, makeMaxtrix creates a special "matrix", which is really a list containing a function to
+# set the value of the matrix
+# get the value of the matrix
+# set the value of the inverse matrix
+# get the inverse matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -19,7 +20,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+# The second function returns the inverse of the matrix. The function checks if
+# the inverse has already been computed. If it has that it returns the result and
+# skips the computation. Else it computes the inverse and sets the value in the cache
+# This function assumes that the matrix is invertible
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
